@@ -113,7 +113,7 @@ function finalGo() {
   //document.getElementById('overlay').remove();
   const iframe = Object.assign(document.createElement('iframe'), {
     id: 'mainframe',
-    src: './Version%2048/Data/Pages/Infonet%20HyperText.html',
+    src: 'https://infonet-team.github.io/Data/Pages/Version%2048/Data/Pages/Infonet%20HyperText.html',
     class: 'mainframe'
   });
   document.body.append(iframe);
