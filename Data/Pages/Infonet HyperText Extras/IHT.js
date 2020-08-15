@@ -119,10 +119,13 @@ function finalGo() {
   document.body.append(iframe);
   setTimeout(() => {
     removeFadeOut(document.getElementById('overlay'), 500);
+    setTimeout(() => {
+      document.getElementById('overlay').remove();
+    }, 600);
   }, 600);
 setTimeout(removeVideo, 20000);  
 }
 function removeVideo() {
   document.getElementById('HyperTextTheme').remove();
-  document.getElementById('overlay').remove();
+  
 }
